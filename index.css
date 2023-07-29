@@ -47,7 +47,7 @@ span{
 #hero h1{
     color: white;
     font-size: 60px;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     font-family: La;
     font-weight: 100;
     padding: 50px 0;
@@ -148,11 +148,11 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(237, 205, 187, .5);
-    height: 100vh;
+    background-color: rgba(227, 183, 160, .7);
+    height: 80vh;
 }
 .about-conteiner{
-    background-color: rgba(253, 248, 245, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     height: fit-content;
 }
 .section-heading{
