@@ -1,0 +1,23 @@
+{
+  "name": "lora-al-ahmad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djordjestojanovic1993/Lora-Al-Ahmad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djordjestojanovic1993/Lora-Al-Ahmad/issues"
+  },
+  "homepage": "https://github.com/djordjestojanovic1993/Lora-Al-Ahmad#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
