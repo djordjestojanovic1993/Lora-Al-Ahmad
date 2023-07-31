@@ -17,7 +17,7 @@ videoObserver.observe(videoContainer);
 // Dodajemo event listener na učitavanje stranice kako bismo ručno pokrenuli video
 window.addEventListener("load", function() {
   var iframe = document.getElementById("youtube-video");
-  var videoUrl = "liJVSwOiiwg";
+  var videoUrl = "https://www.youtube.com/watch?v=tQ46mSyW_jg";
   iframe.setAttribute("src", videoUrl);
 });
 
