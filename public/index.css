@@ -602,7 +602,8 @@ nav span{
     width: 250px;
     position: relative;
     box-sizing: border-box;
-    background-color: rgba(108, 177, 211, 0.7);
+    background-color: rgba(59, 96, 114, .7);
+    color: white;
 }
 .sender-msg{
     width: 550px;
@@ -646,7 +647,7 @@ nav span{
     background-color: var(--darkGreen);
     letter-spacing: 0.1em;
     border-radius: 10px;
-    background-color: rgba(108, 177, 211, 0.7);
+    background-color: rgba(59, 96, 114, .9);
 }
 .input-wrapper input:valid,
 .input-wrapper input:focus,
@@ -655,7 +656,7 @@ nav span{
     border-color: var(--rose);
 }
 #contact form input[type="submit"], #contact .form-small a{
-    color: var(--pale);
+    color: white;
     margin-top: 20px;
     width: 100px;
     float: right;
@@ -664,10 +665,10 @@ nav span{
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    background-color: rgba(108, 177, 211, 0.7);
+    background-color: rgba(59, 96, 114, .7);
 }
-#contact form input[type="submit"]:hover, #contact .form-small a:hover{
-    background-color: rgba(187, 214, 228, 0.7);
+#contact form input[type="submit"]:hover, #contact .form-small a:hover{ 
+    background-color: rgba(25, 50, 63, 0.7);
 }
 #contact .form-small{
     display: none;
