@@ -225,24 +225,44 @@ nav span{
     background-color: rgba(231, 183, 162, 0.5);
     color: rgb(255, 253, 232);
 }
-.video-container{
-    width: 500px;
-    height: 300px;
+#first-video{
+    width: 100%;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 100px;
+    /* z-index: 15; */
+}
+.video-container {
+  /* overflow: hidden; */
+}
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  width: 560px;
+  height: 315px;
+
+}
+#player{
+    width: 400px;
+    height: 300px;
+    background-color: yellow;
 }
 #work{
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, .2);
 }
-#audio-video{
+#audio-video-pictures{
     /* width: 100%; */
     padding: 100px 20px;
     /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
 }
 .audio-video-container {
     border: solid rgb(59, 96, 114);
@@ -317,4 +337,64 @@ nav span{
     border: 2px solid black;
     background-color: white;
     transition: .7s;
+}
+.video-play-window iframe{
+    width: 100%;
+    height: 100%;
+}
+.pictures{
+    width: 100%;
+    height: fit-content;
+    border: solid rgb(59, 96, 114);
+    border-radius: 40px;
+    padding: 25px 10px 25px 10px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.picture{
+    height: fit-content;
+    width: 300px;
+    border-radius: 10px;
+}
+.picture img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.picture img:hover{
+    filter: none;
+    transform: scale(1.05);
+    transition: 1s;
+}
+.picture-window-cover{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(191, 146, 112, .9);
+    z-index: 4;
+    cursor: pointer;
+    transition: .7s;
+}
+.picture-window{
+    position: fixed;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    transition: .7s;
+}
+.picture-window img{
+    height: 600px;
+    border: 1px solid black;
+    box-shadow: 10px -0px 10px rgba(000, 000, 000, .5),  -5px -0px 10px rgba(0, 0, 0, .4);
+}
+#Reviews{
+    width: 100%;
+    height: 100vh;
 }
