@@ -540,25 +540,23 @@ nav span{
     justify-content: center;
     gap: 20px;
     text-align: center;
+    padding: 0 30px;
 }
 .event-title{
-    font-size: 28px;
+    font-size: 24px;
     display: flex;
     justify-content: center;
-    padding: 0 10px 0px 10px;
 }
 .event-description{
 
 }
 .event-location{
     font-size: 20px;
-    padding: 0 10px 10px 10px;
     display: flex;
     justify-content: center;
 }
-.elent-date{
-    font-size: 18px;
-    padding: 0 10px 10px 10px;
+.event-date{
+    font-size: 12x;
     display: flex;
     justify-content: center;
 }
@@ -566,5 +564,4 @@ nav span{
     font-size: 18px;
     display: flex;
     justify-content: center;
-    padding: 0 10px 10px 10px;
 }
