@@ -309,6 +309,8 @@ nav span{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* align-items: start; */
     padding: 40px 0 0 0;
     gap: 10px;
@@ -330,7 +332,7 @@ nav span{
     letter-spacing: 2px;
 }
 .work-conteiner-column span{
-    padding: 20px 0;
+    padding: 15px 0px;
     font-size: 16px;
     text-align: center;
     text-align: center;
@@ -340,6 +342,13 @@ nav span{
     /* font-size: 2vw; */
     font-weight: 300;
     letter-spacing: 2px;
+    /* border-bottom: 1px solid rgba(172, 88, 25, 1); */
+    width: 80%;
+}
+.work-conteiner-column ul{
+    list-style: none;
+    font-size: 13px;
+    padding: 5px 0;
 }
 #audio-video-pictures{
     /* width: 100%; */
