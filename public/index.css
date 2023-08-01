@@ -25,12 +25,9 @@ nav{
     align-items: center;
     box-shadow: 4px 6px 6px rgba(000, 000, 000, .2);
     color: white;
-    /* background-color: rgba(000, 000, 000, .3); */
-    position: absolute;
     background-color: rgba(231, 183, 162, .7);
     position: fixed;
     z-index: 2;
-    /* padding: 0 50px; */
 }
 .logo{
     /* width: 30%; */
@@ -46,7 +43,7 @@ nav ul{
 nav ul a{
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    font-size: 1vw;
+    font-size: calc(.5vw + 8px);
     color: white;
 }
 nav ul a:hover{
@@ -57,13 +54,14 @@ nav ul a:hover{
     height: 30px;
     width: 30px;
     display: none;
+
 }
 .line{
     display: block;
     height: 3px;
     margin-top: 7px;
     margin-bottom: 7px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: white;
     width: 100%;
     border-radius: 15px;
 }
