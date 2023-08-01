@@ -1,25 +1,25 @@
-var videoObserver = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(function(entry) {
-    if (entry.isIntersecting) {
-      var iframe = entry.target.querySelector("iframe");
-      var videoUrl = "https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID?autoplay=1";
-      iframe.setAttribute("src", videoUrl);
-    } else {
-      var iframe = entry.target.querySelector("iframe");
-      iframe.setAttribute("src", "");
-    }
-  });
-}, { threshold: 0.5 });
+// var videoObserver = new IntersectionObserver(function(entries, observer) {
+//   entries.forEach(function(entry) {
+//     if (entry.isIntersecting) {
+//       var iframe = entry.target.querySelector("iframe");
+//       var videoUrl = "https://www.youtube.com/embed/JUdcim9Hu4M";
+//       iframe.setAttribute("src", videoUrl);
+//     } else {
+//       var iframe = entry.target.querySelector("iframe");
+//       iframe.setAttribute("src", "");
+//     }
+//   });
+// }, { threshold: 0.5 });
 
-var videoContainer = document.getElementById("video-container");
-videoObserver.observe(videoContainer);
+// var videoContainer = document.getElementById("video-container");
+// videoObserver.observe(videoContainer);
 
-// Dodajemo event listener na učitavanje stranice kako bismo ručno pokrenuli video
-window.addEventListener("load", function() {
-  var iframe = document.getElementById("youtube-video");
-  var videoUrl = "https://www.youtube.com/watch?v=tQ46mSyW_jg";
-  iframe.setAttribute("src", videoUrl);
-});
+// // Dodajemo event listener na učitavanje stranice kako bismo ručno pokrenuli video
+// window.addEventListener("load", function() {
+//   var iframe = document.getElementById("youtube-video");
+//   var videoUrl = "https://www.youtube.com/watch?v=tQ46mSyW_jg";
+//   iframe.setAttribute("src", videoUrl);
+// });
 
   function playVideoManually(){
     let videos = document.getElementsByClassName('video');
