@@ -645,7 +645,7 @@ nav span{
     background-color: var(--darkGreen);
     letter-spacing: 0.1em;
     border-radius: 10px;
-    background-color: rgba(59, 96, 114, .9);
+    background-color: rgba(59, 96, 114, .85);
 }
 .input-wrapper input:valid,
 .input-wrapper input:focus,
@@ -677,7 +677,62 @@ nav span{
     /* box-sizing: border-box; */
 }
 footer{
-    width: 100%;
+    margin-top: 100px;
+    width: calc(100% + 80px);
+    position: relative;
+    left: -40px;
     height: 50vh;
-    /* background-color: aqua; */
+    background-color: rgb(151, 79, 24);
+    display: flex;
+}
+.footer-logo{
+    color: white;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 30%;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 15px;
+    width: 30%;
+}
+.footer-nav span{
+
+}
+.footer-nav a{
+    color: wheat;
+    text-decoration: none;
+}
+.footer-nav a:hover{
+    color: rgba(158, 144, 138, 0.5);
+    transition: ease-out 0.2s;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0;
+    width: 30%;
+    gap: 20px;
+}
+.footer-links span{
+    margin: 0;
+    color: wheat;
+    letter-spacing: 1px;
+}
+.footer-coa-links i{
+    color: white;
+}
+.footer-coa-links i:hover{
+    color: rgba(158, 144, 138, 0.5);
+
 }
