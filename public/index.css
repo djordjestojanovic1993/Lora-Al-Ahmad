@@ -229,7 +229,7 @@ nav span{
     font-family: 'Playfair Display', serif;
     
     color: rgba(172, 88, 25, 1);
-    font-size: 2vw;
+    font-size: 26px;
     font-weight: 300;
     letter-spacing: 3px;
     margin-top: 50px;
@@ -238,7 +238,7 @@ nav span{
     text-align: center;
     font-style: italic;
     font-weight: 300;
-    font-size: 0.8vw;
+    font-size: 16px;
     font-family: 'Playfair Display', serif;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
@@ -247,7 +247,7 @@ nav span{
     width: 50%;
     text-align: justify;
     font-family: 'Lato', sans-serif;
-    font-size: 0.8vw;
+    font-size: 16px;
     line-height: 1.5;
     position: relative;
     /* left: 50%; */
@@ -278,10 +278,10 @@ nav span{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: 15; */
 }
 .video-container {
   /* overflow: hidden; */
+    /* z-index: 15; */
 }
 .video-container iframe {
   width: 100%;
