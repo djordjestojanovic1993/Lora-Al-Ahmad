@@ -561,7 +561,6 @@ nav span{
     align-items: center;
     justify-content: center;
     gap: 50px;
-    /* background-color: red; */
 }
 .events-conteiner{
     width: 900px;
@@ -618,11 +617,7 @@ nav span{
 }
 #contact{
     margin-top: 200px;
-    /* padding: 50px 0; */
-    /* background-color: var(--darkGreen); */
-    background-color: var(--pale);
     transition: 0.5s ease;
-    /* width: 100%; */
     padding: 30px 0;
     box-shadow: 5px 5px 10px rgba(59, 96, 114, .7), -3px -3px 10px rgba(59, 96, 114, .7);
 }
