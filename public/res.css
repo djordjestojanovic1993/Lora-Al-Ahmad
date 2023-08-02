@@ -1,4 +1,52 @@
-
+@media (max-width: 1200px){
+    .background h1{
+        font-size: 40px;
+        padding: 35px 0;
+    }
+    /*promeni ovo na kraju*/
+    .page-content{
+        width: 1000px;
+        box-shadow: 10px -0px 10px rgba(000, 000, 000, .3),  -5px -0px 10px rgba(0, 0, 0, .2);
+        background-color: rgba(255, 255, 255, .75);
+        padding: 60px 40px 0 40px;
+        border-radius: 5px;
+    }
+    #hero{
+        padding: 0px 0 150px 0;
+    }
+    .hero-cover-div{
+        flex-direction: column;
+    }
+    .hero-content{
+        padding: 40px 0 0 0;
+    }
+    .read-more-btn{
+        left: 20%;
+    }
+    .work-conteiner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-conteiner-column{
+        margin-top: 30px;
+        padding: 15px 0 0 0;
+        gap: 5px;
+        width: 500px;
+    }
+    .audio-video-container {
+        padding: 15px 80px 10px 80px;
+    }
+    .videos{
+        flex-direction: column;
+    }
+    .video{
+        width: 350px;
+    }
+    .video-play-window{
+        width: 700px;
+        height: 450px;
+    }
+}
 @media (min-width: 1024px){
     nav ul{
         display: flex !important;
