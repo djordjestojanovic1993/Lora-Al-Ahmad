@@ -139,3 +139,25 @@
         width: 40%;
     }
 }
+@media (max-width: 900px){
+    .page-content{
+        width: 600px;
+    }
+    .review-img img:hover{
+        transform: scale(1.6);
+    }
+    footer{
+        margin-top: 50px;
+        padding: 50px 0 100px 0;
+    }
+    .footer-logo{
+        font-size: 40px;
+    }
+    .footer-nav a{
+        font-size: 16px;
+    }
+    .footer-links{
+        gap: 10px;
+        font-size: 14px;
+    }
+}
