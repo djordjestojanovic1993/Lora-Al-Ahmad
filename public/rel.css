@@ -1,6 +1,6 @@
 @media (min-width: 1800px){
     nav{
-        height: 3vw;
+        height: 5vw;
     }
     .logo{
         font-size: 1.2vw;
@@ -10,7 +10,7 @@
         /* as */
     }
     .background{
-        padding: 3vw 0 0 0;
+        padding: 5vw 0 0 0;
     }
     .background h1{
         font-size: 2.6vw;
@@ -155,10 +155,10 @@
         gap: 2vw;
         padding: 1.5vw;
     }
-    .review:first-child{
+    /* .review:first-child{
         border-bottom: .15vw solid rgba(191, 146, 112, .9) ;
         border-radius: .1vw;
-    }
+    } */
     .review{
         padding: 0px 0px .2vw 0;
     }
