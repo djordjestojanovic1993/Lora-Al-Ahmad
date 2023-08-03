@@ -668,6 +668,7 @@ nav span{
     font-size: 12x;
     display: flex;
     justify-content: center;
+    /* as */
 }
 .event-time{
     font-size: 18px;
