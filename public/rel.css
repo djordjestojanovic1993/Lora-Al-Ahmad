@@ -66,6 +66,7 @@
     .about-text{
         font-size: .8vw;
         margin-bottom: 2.5vw;
+        width: 25vw;
     }
     .read-more-btn{
         padding: .25vw .5vw;
@@ -84,26 +85,50 @@
         width: 20vw;
         height: 15vw;
     }
-    .work-conteiner-column{
-        margin-top: 2.5vw;
+    .work-conteiner{
         padding: 2vw 0 0 0;
-        gap: .5vw;
-        border-radius: .5vw;
-        box-shadow: .5vw -0px .5vw rgba(000, 000, 000, .3),  -.25vw -0px .5vw rgba(0, 0, 0, .2);
+        gap: 2vw;
     }
-    .work-conteiner-column h4{
-        padding: 1vw 0;
-        font-size: 1.1vw;
-        letter-spacing: .1vw;
+    .composition-row{
+        gap: 1.5vw;
     }
-    .work-conteiner-column span{
-        padding: 0.75vw 0px;
+    .work-conteiner h4{
         font-size: .8vw;
-        letter-spacing: .1vw;
     }
-    .work-conteiner-column ul{
-        font-size: 0.65vw;
+    .compositions-content{
+        gap: 1.5vw;
+    }
+    .composition{
+        width: 13vw;
+        height: 13vw;
+        border-radius: 1.5vw;
+        padding: 0 .5vw;
+    }
+    .composition-content{
+        padding: .25vw;
+        padding: .75vw .5vw;
+        font-size: .8vw;
+        margin-bottom: .5vw;
+        letter-spacing: .1vw;
+        border-radius: .5vw;
+    }
+    .composition-content ul{
+        font-size: .65vw;
         padding: .25vw 0;
+    }
+    .composition-content ul li{
+        margin: .15vw .3vw;
+        border-bottom: .05vw solid rgba(172, 88, 25, 1);
+    }
+    .see-more-btn{
+        border: .05vw solid rgba(172, 88, 25, 1);
+        padding: .25vw .5vw;
+        border-radius: .25vw;
+        font-size: .7vw;
+        
+    }
+    .see-more-btn:hover{
+        border: .05vw solid rgb(255, 253, 232);
     }
     #audio-video-pictures{
         padding: 5vw 1vw;
@@ -137,6 +162,7 @@
         border: .1vw solid black;
     }
     .pictures{
+        width: 45vw;
         border-radius: 2vw;
         padding: 1.25vw .5vw 1.25vw .5vw;
         gap: 1.5vw;
@@ -210,6 +236,7 @@
         font-size: .9vw;
     }
     #contact{
+        width: 45vw;
         box-shadow: .25vw .25vw .5vw rgba(59, 96, 114, .7), -.15vw -.15vw .5vw rgba(59, 96, 114, .7);
     }
     #contact .section-heading{
@@ -217,6 +244,7 @@
     }
     #contact-wrapper{
         gap: 2.5vw;
+        font-size: 1vw;
     }
     .sender-info{
         gap: 2.5vw;
