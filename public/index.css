@@ -478,7 +478,7 @@ nav span{
     height: 100%;
 }
 .video i:hover{
-    color: rgba(226, 226, 226, 0.8);
+    color: rgba(201, 201, 201, 0.8);
 }
 .video-play-window-cover{
     position: fixed;
