@@ -32,6 +32,9 @@
     .audio-video-container {
         padding: 15px 80px 10px 80px;
     }
+    .audio-video-container .header {
+        margin-top:-30px;
+    }    
     .videos{
         flex-direction: column;
     }
@@ -101,7 +104,6 @@
         background-image: linear-gradient(to right, rgba(245, 243, 245, 0.1), rgba(245, 243, 245, 0.1));
         padding: 20px 0;
         position: absolute;
-        top: 70px;
     }
     nav ul li{
         display: block;
@@ -136,6 +138,9 @@
 @media (max-width: 1023px){
     .page-content{
         width: 700px;
+    }
+    .audio-video-container {
+        padding: 20px;
     }
     .footer-links{
         width: 40%;
