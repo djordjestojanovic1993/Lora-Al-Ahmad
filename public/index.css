@@ -829,17 +829,16 @@ footer{
     padding: 0;
     width: 30%;
     gap: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .footer-links span{
     margin: 0;
-    color: rgb(30, 59, 73);
+    /* color: rgb(30, 59, 73); */
     letter-spacing: 1px;
 }
-.footer-coa-links i{
-    color: rgb(30, 59, 73);
+.footer-coa-links a{
+    color: rgb(170, 69, 26);
 }
-.footer-coa-links i:hover{
-    color: rgba(158, 144, 138, 0.5);
-
+.footer-coa-links svg{
+    color: rgb(170, 69, 26);
 }

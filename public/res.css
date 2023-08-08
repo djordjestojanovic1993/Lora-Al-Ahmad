@@ -382,9 +382,37 @@
         height: 150px;
     }
 }
-@media (max-width: 424px){
+@media (max-width: 4250px){
     
+.composition{
+    width: 260px;
+    height: 240px;
+}
+}
+@media (max-width: 424px){
     #myVideo{
         width: 300px;
+    }
+}
+@media (max-width: 375px){
+    .hero-img{
+        width: 300px;
+        height: 300px;
+        /* border-radius: 20px; */
+        border-radius: 74% 26% 78% 22% / 39% 72% 28% 61%;
+    }
+    .coa-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .video{
+        width: 300px;
+    }
+    .picture{
+        width: 300px;
+    }
+    .footer-coa-links{
+        margin: 0;
+        padding: 0 0 0 30px;
     }
 }
