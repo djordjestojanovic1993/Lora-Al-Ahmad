@@ -223,7 +223,7 @@
         line-height: 45px;
     }
     .hero-content h3{
-        font-size: calc(.5vw + 16px);
+        font-size: calc(.5vw + 14px);
     }
     .coa-links{
         gap: 10px;
@@ -343,6 +343,13 @@
     .hero-content h1{
         font-size: 38px;
     }
+    #myVideo{
+        width: 400px;
+    }
+    .see-more-btn{
+        left: 70%;
+        
+    }
     .event-title{
         font-size: 18px;
         font-weight: 600;
@@ -375,5 +382,11 @@
     }
     .sender-msg{
         height: 150px;
+    }
+}
+@media (max-width: 424px){
+    
+    #myVideo{
+        width: 300px;
     }
 }

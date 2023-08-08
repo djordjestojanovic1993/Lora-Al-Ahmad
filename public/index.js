@@ -1,25 +1,32 @@
-// var videoObserver = new IntersectionObserver(function(entries, observer) {
-//   entries.forEach(function(entry) {
-//     if (entry.isIntersecting) {
-//       var iframe = entry.target.querySelector("iframe");
-//       var videoUrl = "https://www.youtube.com/embed/JUdcim9Hu4M";
-//       iframe.setAttribute("src", videoUrl);
-//     } else {
-//       var iframe = entry.target.querySelector("iframe");
-//       iframe.setAttribute("src", "");
-//     }
-//   });
-// }, { threshold: 0.5 });
+function playVideoAutomaticly(){
+  document.addEventListener("DOMContentLoaded", function() {
+    const videoContainer = document.getElementById("videoContainer");
+    const myVideo = document.getElementById("myVideo");
+  
+    myVideo.src = 'videos/video1.mp4';
+    myVideo.type="video/mp4";
 
-// var videoContainer = document.getElementById("video-container");
-// videoObserver.observe(videoContainer);
-
-// // Dodajemo event listener na učitavanje stranice kako bismo ručno pokrenuli video
-// window.addEventListener("load", function() {
-//   var iframe = document.getElementById("youtube-video");
-//   var videoUrl = "https://www.youtube.com/watch?v=tQ46mSyW_jg";
-//   iframe.setAttribute("src", videoUrl);
-// });
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5
+    };
+  
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          myVideo.currentTime = 0; // Postavite trenutno vreme na početak
+          myVideo.play();
+        } else {
+          myVideo.pause();
+        }
+      });
+    }, options);
+  
+    observer.observe(videoContainer);
+  });
+}
+playVideoAutomaticly();
 
   function playVideoManually(){
     let videos = document.getElementsByClassName('video');
