@@ -318,12 +318,20 @@
 }
 
 @media (max-width: 650px){
+    #form-wrapper{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    #form-wrapper form{
+        width: 100%;
+    }
     .sender-info{
         flex-direction: column;
         gap: 10px;
     }
     .input-wrapper, .sender-msg{
-        width: 350px;
+        width: 100%;
     }
     .sender-msg{
         height: 150px;
