@@ -249,6 +249,7 @@
         width: fit-content;
         border: 0;
         border-radius: 0;
+        padding: 20px 0;
     }
     .video-play-window{
         width: 90%;
@@ -323,6 +324,7 @@
         background-color: #af875d;
         display: flex;
     }
+
     .footer-mail{
         position: absolute;
         top: 10%;
@@ -332,6 +334,8 @@
     .footer-coa-links{
         flex-direction: column-reverse;
         align-items: center;
+        width: 30%;
+        padding: 0 0 0 40px;
     }
 }
 
