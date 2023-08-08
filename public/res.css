@@ -192,3 +192,52 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 768px){
+    .logo{
+        font-size: 24px;
+    }  
+    nav ul a{
+        font-size: calc(.5vw + 16px);
+    }
+    .page-content{
+        width: 100%;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, .65);
+        padding: 60px 0;
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+    .hero-img{
+        width: auto;
+        height: 350px;
+    }
+    .hero-img img{
+        filter: drop-shadow(5px 5px 10px rgb(226, 205, 196));
+    }
+    .hero-content h1{
+        color: rgba(0, 0, 0, 0.6);;
+        font-size: 50px;
+        font-weight: 900;
+        padding: 50px 20px 10px 20px;
+    }
+    .hero-content h3{
+        font-size: calc(.5vw + 16px);
+    }
+    .coa-links{
+        gap: 10px;
+    }
+
+
+
+
+    footer{
+        margin-top: 100px;
+        width: 100%;
+        position: relative;
+        left: 0;
+        padding: 100px 0 100px 0;
+        background-color: #af875d;
+        display: flex;
+    }
+}
