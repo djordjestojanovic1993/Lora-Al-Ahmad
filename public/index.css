@@ -216,7 +216,7 @@ nav span{
 .Presser{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 #about{
     position: relative;
