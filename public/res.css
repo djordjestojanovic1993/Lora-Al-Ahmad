@@ -269,6 +269,39 @@
     .picture-window{
         display: none;
     }
+    .reviews-conteiner{
+        display: flex;
+        padding: 0px 0 80px 0;
+    }
+    .review-text p{
+        width: fit-content;
+        max-width: 500px;
+        padding: 0 30px;
+    }
+    .review-text span{
+        position: relative;
+        right: 40px;
+    }
+    #events{
+        padding: 0 0 100px 0px;
+    }
+    .events-conteiner{
+        width: 80%;
+    }
+    .event{
+        width: 240px;
+        height: 220px;
+        gap: 15px;
+        padding: 10px 30px 0 30px;
+    }
+    .event-title{
+        font-size: 22px;
+    }
+    #contact{
+        margin: 120px auto;
+        width: 90%;
+        padding: 10px 0;
+    }
 
 
 
@@ -281,5 +314,18 @@
         padding: 100px 0 100px 0;
         background-color: #af875d;
         display: flex;
+    }
+}
+
+@media (max-width: 650px){
+    .sender-info{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input-wrapper, .sender-msg{
+        width: 350px;
+    }
+    .sender-msg{
+        height: 150px;
     }
 }

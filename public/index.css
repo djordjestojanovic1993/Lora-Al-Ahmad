@@ -578,7 +578,6 @@ nav span{
     padding: 40px 0 150px 0;
 }
 .review{
-    /* width: 400px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
