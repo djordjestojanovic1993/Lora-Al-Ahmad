@@ -219,7 +219,8 @@
         color: rgba(0, 0, 0, 0.6);;
         font-size: 50px;
         font-weight: 900;
-        padding: 50px 20px 10px 20px;
+        padding: 50px 20px 5px 20px;
+        line-height: 45px;
     }
     .hero-content h3{
         font-size: calc(.5vw + 16px);
@@ -281,6 +282,7 @@
     .review-text span{
         position: relative;
         right: 40px;
+        font-size: 14px;
     }
     #events{
         padding: 0 0 100px 0px;
@@ -289,29 +291,35 @@
         width: 80%;
     }
     .event{
-        width: 240px;
-        height: 220px;
-        gap: 15px;
+        width: 220px;
+        height: 200px;
+        gap: 10px;
         padding: 10px 30px 0 30px;
+        box-shadow: 3px 3px 10px rgba(59, 96, 114, .4);
     }
     .event-title{
-        font-size: 22px;
+        font-size: 20px;
+    }
+    .event-location{
+        font-size: 17px;
     }
     #contact{
         margin: 120px auto;
         width: 90%;
         padding: 10px 0;
     }
-
-
-
-
+    #contact .section-heading{
+        font-size: 22px;
+    }
+    #contact-wrapper .contact-info{
+        font-size: 14px;
+    }
     footer{
         margin-top: 100px;
         width: 100%;
         position: relative;
         left: 0;
-        padding: 100px 0 100px 0;
+        padding: 100px 0 140px 0;
         background-color: #af875d;
         display: flex;
     }
