@@ -223,11 +223,6 @@ nav span{
     /* background-color: rgba(245, 245, 220, .6); */
     /* height: 110vh; */
 }
-.about-conteiner{
-    /* background-color: rgba(255, 255, 255, 0.5); */
-    height: fit-content;
-    background-color: red;
-}
 .section-heading{
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -415,10 +410,10 @@ nav span{
     background-color: rgba(151, 69, 34, 0.5);
     color: rgb(255, 253, 232);
 }
+
 #audio-video-pictures{
     /* width: 100%; */
     padding: 100px 20px;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
