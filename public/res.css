@@ -82,6 +82,12 @@
     :root{
         --transitionTime: 0.4s;
     }
+    .visible-logo{
+        display: none;
+    }
+    .hidden-logo{
+        display: block;
+    }
     .hamburger{
         display: block;
         position: absolute;
@@ -150,6 +156,9 @@
     }
 }
 @media (max-width: 900px){
+    .logo img{
+        height: 80%;
+    }
     .page-content{
         width: 600px;
     }
@@ -197,6 +206,9 @@
     .logo{
         font-size: 24px;
     }  
+    .logo img{
+        height: 70%;
+    }
     nav ul a{
         font-size: calc(.5vw + 16px);
     }
@@ -341,6 +353,9 @@
 }
 
 @media (max-width: 650px){
+    .logo img{
+        height: 60%;
+    }
     .hero-content h1{
         font-size: 38px;
     }
@@ -385,7 +400,7 @@
         height: 150px;
     }
 }
-@media (max-width: 4250px){
+@media (max-width: 425px){
     
 .composition{
     width: 260px;
@@ -398,6 +413,9 @@
     }
 }
 @media (max-width: 375px){
+    .logo img{
+        height: 50%;
+    }
     .hero-img{
         width: 300px;
         height: 300px;
