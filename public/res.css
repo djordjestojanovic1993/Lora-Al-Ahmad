@@ -315,6 +315,16 @@
         background-color: #af875d;
         display: flex;
     }
+    .footer-mail{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .footer-coa-links{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 @media (max-width: 650px){
