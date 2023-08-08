@@ -203,7 +203,7 @@
     .page-content{
         width: 100%;
         box-shadow: none;
-        background-color: rgba(255, 255, 255, .65);
+        background-color: rgba(255, 255, 255, .75);
         padding: 60px 0;
         border-radius: 0px;
         margin-top: 0px;
@@ -335,11 +335,29 @@
         flex-direction: column-reverse;
         align-items: center;
         width: 30%;
-        padding: 0 0 0 40px;
+        padding: 0 0 0 50px;
     }
 }
 
 @media (max-width: 650px){
+    .hero-content h1{
+        font-size: 38px;
+    }
+    .event-title{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .event-location{
+        font-size: 16px;
+    }
+    .event-date{
+        font-size: 16px;
+    }
+    .event-time{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
     #form-wrapper{
         width: 90%;
         display: flex;
