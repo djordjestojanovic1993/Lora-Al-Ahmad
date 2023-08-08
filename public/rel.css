@@ -283,6 +283,9 @@
         padding: .5vw .75vw;
         border-radius: 1vw;
     }
+    footer{
+        padding: 5vw 0 7.5vw 0;
+    }
     .footer-logo{
         font-size: 2.4vw;
     }

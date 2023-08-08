@@ -109,6 +109,7 @@ nav span{
     align-items: center;
     position: fixed;
     overflow-y: auto;
+    position: relative;
 }
 .page-content{
     width: 1150px;
@@ -786,12 +787,18 @@ nav span{
     /* box-sizing: border-box; */
 }
 footer{
-    margin-top: 100px;
-    width: calc(100% + 80px);
+    margin-top: 62px;
+    width: 100%;
     position: relative;
-    left: -40px;
-    padding: 100px 0 100px 0;
+    left: 0;
+    padding: 100px 0 150px 0;
     background-color: rgba(231, 183, 162, 1);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.footer-content{
+    width: 80%;
     display: flex;
 }
 .footer-logo{

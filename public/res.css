@@ -320,7 +320,7 @@
         width: 100%;
         position: relative;
         left: 0;
-        padding: 100px 0 140px 0;
+        padding: 100px 0 100px 0;
     }
 
     .footer-mail{
@@ -334,6 +334,9 @@
         align-items: center;
         width: 30%;
         padding: 0 0 0 50px;
+    }
+    .footer-content{
+        width: 100%;
     }
 }
 
