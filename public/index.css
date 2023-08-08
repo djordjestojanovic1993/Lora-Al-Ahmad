@@ -213,7 +213,11 @@ nav span{
 .coa-links a:nth-child(3):hover path{
     fill: rgb(255, 253, 232);
 }
-
+.Presser{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 #about{
     position: relative;
     display: flex;
