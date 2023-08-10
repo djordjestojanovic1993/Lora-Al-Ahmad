@@ -245,6 +245,9 @@
         max-width: 500px;
         padding: 0 30px;
     }
+    #myVideo{
+        width: 100% ;
+    }
     #work{
         padding: 0 0 120px 0;
     }
@@ -359,9 +362,6 @@
     .hero-content h1{
         font-size: 38px;
     }
-    #myVideo{
-        width: 400px;
-    }
     .see-more-btn{
         left: 70%;
         
@@ -408,9 +408,6 @@
 }
 }
 @media (max-width: 424px){
-    #myVideo{
-        width: 300px;
-    }
 }
 @media (max-width: 375px){
     .logo img{
