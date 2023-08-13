@@ -19,14 +19,14 @@ function readDataFromDB() {
   });
 }
 
-async function showData(){
-  let datas = await readDataFromDB();
+async function showData(events){
+  // let datas = await readDataFromDB();
   const eventTemplate = document.getElementById('event-template')
   const eventsWrapper = document.getElementsByClassName('events-wrapper');
   const event = eventTemplate.content.getElementById('event');
 
   
-  for(let data of datas){
+  for(let data of events){
     // console.log(data.name)
     const clone = event.cloneNode(true);
     // console.log(clone.getElementsByClassName('event-title')[0])
@@ -39,40 +39,64 @@ async function showData(){
 
     eventsWrapper[0].appendChild(clone);
   }
-  createListOfEvents(datas);
+  // createListOfEvents(datas);
 }
-showData();
+// showData();
 
-const Event = function(name, location, date, link, when){
-  this.name = name;
-  this.location = location;
-  this.date = date;
-  this.link = link;
-  this.when = when;
-}
 
-const events = [];
+
 
 const eventsContainer = document.getElementById('events-wrapper');
 
-// events.push(new Event("G. Gershwin Outstanding Concert series", "Queens Cathedral, NYC", "Sat, 2nd of April 2022", "", "02042022"));
-// events.push(new Event("American Protégé Winners’ Recital\twith\t", "Carnegie Hall, NYC", "Fri, 15th of April 2022", "", "15042022"));
-// events.push(new Event("Graduation recital", "Stiefel Hall, NYC", "Sun, 8th of May 2022", "", "08052022"));
-// events.push(new Event("Mannes Sounds Festival", "Stiefel Hall, NYC", "Sun, 13th of February 2022", "", "13022022"));
-// events.push(new Event("Christmas Concert", "History Museum of Serbia, Belgrade", "Tue, 28th of December 2021", "", "28122021"));
-
-
-
-function createListOfEvents(datas){
-  var a = new Date(2021,0,11)
-  // console.log(a)
-  for( data of datas){
-    //konvertujemo datum iz baze u oblik ddMMyyyy
-    let pomocna = data.date;
-    pomocna = pomocna.substring(5)
-    console.log(pomocna)
-    events.push(new Event(data.name, data.location, data.date, "", data.time));
-
+async function createListOfEvents(){
+  const Event = function(name, location, date, link, when){
+    this.name = name;
+    this.location = location;
+    this.date = date;
+    this.link = link;
+    this.when = when;
   }
-  console.log(events);
+  
+  let datas = await readDataFromDB();
+  const events = [];
+  for( data of datas){
+    events.push(new Event(data.name, data.location, data.date, "", data.when));
+  }
+  sortEvents(events);
+  showData(events);
+}
+createListOfEvents();
+
+// sortiramo objekte dogadjaja u nizu prema datumu
+function sortEvents(events){
+  events.sort(function(ev1, ev2){
+    let day1 = Number.parseInt(ev1.when.substr(0, 2));
+    let day2 = Number.parseInt(ev2.when.substr(0, 2));
+    
+  
+    let mon1 = Number.parseInt(ev1.when.substr(2, 2));
+    let mon2 = Number.parseInt(ev2.when.substr(2, 2));
+  
+    let year1 = Number.parseInt(ev1.when.substr(4, 4));
+    let year2 = Number.parseInt(ev2.when.substr(4, 4));
+  
+    if(year1 < year2){
+        return -1;
+    }else  if(year1 > year2){
+        return 1;
+    }
+    if(mon1 < mon2){
+        return -1;
+    }else if(mon1 > mon2){
+        return 1;
+    }
+    if(day1 < day2){
+        return -1;
+    }else if(day1 > day2){
+        return 1;
+    }else{
+        return 0;
+    }
+  });
+  return events;
 }

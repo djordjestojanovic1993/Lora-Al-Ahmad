@@ -644,7 +644,7 @@ nav span{
     padding: 10px;
     overflow-x: scroll;
     scrollbar-width: thin;
-
+    padding: 50px 0;
 }
 .events-wrapper{
     display: flex;
