@@ -33,6 +33,8 @@ async function showData(events){
     clone.getElementsByClassName('event-title')[0].innerText = data.name;
     clone.getElementsByClassName('event-location-p')[0].innerText = data.location;
     clone.getElementsByClassName('event-date-p')[0].innerText = data.date;
+    console.log(data.time)
+    console.log(data.when)
     clone.getElementsByClassName('event-time-p')[0].innerText = data.time;
     // clone.id = 'pera';
     // clone.classList.add('pera');
@@ -142,16 +144,12 @@ function numberOfPassedEvents(events){
         counter++;
     }
   }
-  const allEvents = eventsContainer.children;
-for(let i = 1; i < counter; i++){
-    const deca = allEvents[i];
-    console.log(allEvents[i])
-    
-    const note = document.createElement('p');
-    const noteText = document.createTextNode('This event has ended');
-    note.appendChild(noteText);
+  // const evDivs = document.getElementsByClassName('event');
+  // const evDiv = evDivs[1];
+  // const evDivStyle = getComputedStyle(evDiv) || evDiv.currentStyle;
+  // const evDivStyleMargins = (Number.parseInt(evDivStyle.marginLeft.substr(0, 2))) * 2;
 
-    allEvents[i].replaceChild(note, deca);
-} 
+  // eventsContainer.scrollLeft = counter * (evDiv.scrollWidth + evDivStyleMargins);
+  // console.log("CAO")
   return counter;
 }

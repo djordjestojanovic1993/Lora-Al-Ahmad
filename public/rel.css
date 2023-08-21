@@ -217,7 +217,7 @@
     .event{
         width: 17.5vw;
         height: 15vw;
-        border: .15vw solid rgb(59, 96, 114);
+        border: .15vw solid rgb(151, 112, 84);
         border-radius: 2vw;
         gap: 1vw;
         padding: 0 1.5vw;
@@ -237,7 +237,7 @@
     }
     #contact{
         width: 45vw;
-        box-shadow: .25vw .25vw .5vw rgba(59, 96, 114, .7), -.15vw -.15vw .5vw rgba(59, 96, 114, .7);
+        box-shadow: .25vw .25vw .5vw rgba(190, 140, 106, .5), -.15vw -.15vw .5vw rgba(190, 140, 106, .5);
     }
     #contact .section-heading{
         margin-bottom: .5vw;
