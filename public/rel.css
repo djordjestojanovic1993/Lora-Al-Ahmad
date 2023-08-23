@@ -217,7 +217,7 @@
     .event{
         width: 17.5vw;
         height: 15vw;
-        border: .15vw solid rgb(151, 112, 84);
+        border: .15vw solid rgba(172, 88, 25, .5);
         border-radius: 2vw;
         gap: 1vw;
         padding: 0 1.5vw;
@@ -273,15 +273,13 @@
     .sender-msg textarea:focus ~ span{
         transform: translate(.5vw, -.35vw);
         font-size: 0.6vw;
-        padding: 0 .5vw;
+        padding: .05vw .5vw;
         letter-spacing: 0.1vw;
         border-radius: .5vw;
     }
     #contact form input[type="submit"], #contact .form-small a{
-        width: 5vw;
     
-        padding: .5vw .75vw;
-        border-radius: 1vw;
+        padding: .3vw 1.2vw;
     }
     footer{
         padding: 5vw 0 7.5vw 0;
