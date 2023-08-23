@@ -823,12 +823,14 @@ footer{
 }
 .footer-logo{
     color: white;
-    font-size: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     width: 30%;
+}
+.footer-logo img{
+    width: 150px;
 }
 .footer-nav{
     display: flex;
