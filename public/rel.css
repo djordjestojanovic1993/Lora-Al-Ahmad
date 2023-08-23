@@ -130,7 +130,7 @@
     .see-more-btn:hover{
         border: .05vw solid rgb(255, 253, 232);
     }
-    #audio-video-pictures{
+    #gallery{
         padding: 5vw 1vw;
         gap: 3.5vw;
     }

@@ -6,6 +6,9 @@
     src: url(static/MsMadi-Regular.ttf);
     font-family: La;
 }
+body{
+    scroll-behavior: smooth;
+}
 .visible-logo{
     display: block;
 }
@@ -429,7 +432,7 @@ nav span{
     color: rgb(255, 253, 232);
 }
 
-#audio-video-pictures{
+#gallery{
     /* width: 100%; */
     padding: 100px 20px;
     display: flex;

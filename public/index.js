@@ -1,11 +1,14 @@
-function playVideoAutomaticly(){
+function playVideoAutomatically() {
   document.addEventListener("DOMContentLoaded", function() {
     const videoContainer = document.getElementById("videoContainer");
     const myVideo = document.getElementById("myVideo");
   
     myVideo.src = 'videos/video1.mp4';
-    myVideo.type="video/mp4";
+    myVideo.type = "video/mp4";
 
+    myVideo.muted = false; // Onemogući zvuk
+    myVideo.controls = false; // Onemogući kontrolu (puštanje, pauza, itd.)
+  
     const options = {
       root: null,
       rootMargin: "0px",
@@ -26,7 +29,8 @@ function playVideoAutomaticly(){
     observer.observe(videoContainer);
   });
 }
-playVideoAutomaticly();
+
+playVideoAutomatically();
 
   function playVideoManually(){
     let videos = document.getElementsByClassName('video');
